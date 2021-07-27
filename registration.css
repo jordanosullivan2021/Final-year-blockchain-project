@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(#f0f6fc,#135e96);
+}
+
+.reg-form{
+  max-width: 700px;
+  background: white;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 5px;
+
+}
+
+.reg-form .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.reg-form .title::before{
+  content: '';
+  position: absolute;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  background: linear-gradient(140deg, #f0f6fc,#135e96);
+}
+
+.reg-form form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box{
+  width: calc(100% / 2 -20px);
+  margin-bottom: 15px;
+}
+
+.user-details .input-box .details{
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+  padding-left: 15px;
+  font-size: 15px;
+}
+
+form .gender-details .gender-title{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+form .gender-details .category{
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  margin: 14px 0;
+}
+
+.gender-details .category label{
+  align-items: center;
+  display: flex;
+}
+
+form input [type="radio"]{
+  display: none;
+}
+
+form .button{
+  height: 40px;
+  margin: 45px 0;
+}
+
+form .button input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: white;
+  background: linear-gradient(140deg, #f0f6fc,#135e96);
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+
+form .button input:hover{
+  background: linear-gradient(-140deg, #f0f6fc,#135e96);
+}
+
+@media (max-width: 584px){
+  .reg-from{
+    max-width: 100%;
+  }
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%:
+  }
+}
